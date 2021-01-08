@@ -11,8 +11,6 @@ if (!isset($argv[1])) {
 
 $filename = $argv[1];
 
-echo $filename;
-
 /**
  * Returns an authorized API client.
  * @return Google_Client the authorized client object
