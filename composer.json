@@ -1,0 +1,27 @@
+{
+    "name": "jackdarracott/google-drive-dumper",
+    "description": "Take a dump with GoogleDrive",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jdarracott\\GoogleDriveDumper\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jdarracott\\GoogleDriveDumper\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "google/apiclient": "^2.0"
+    },
+    "scripts": {
+        "post-update-cmd": "Google\\Task\\Composer::cleanup"
+    },
+    "extra": {
+        "google/apiclient-services": [
+            "Drive"
+        ]
+    }
+}
